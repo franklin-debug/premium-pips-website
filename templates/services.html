@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper-main">
+
+	<!-- full Title -->
+	<div class="full-title">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3">Services</h1>
+			<div class="breadcrumb-main">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{% url 'index' %}">Home</a>
+					</li>
+					<li class="breadcrumb-item active">Services</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	
+    <!-- Page Content -->
+    <div class="container" >
+		<!-- Image Header -->
+		<img  src="{% static 'images/pexels-nataliya-vaitkevich-6120214.jpg' %}" width="1100px" height="400px"  alt="" />
+	</div>
+	<div class="services-bar">
+		<div class="container">
+			<h1 class="py-4">Our Subsidiary Services </h1>
+			<!-- Services Section -->
+			<div class="row">
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/services-img-01.jpg' %}" height="100" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Account Management </h4>
+							<p class="card-text">We offer this to informed traders who may have reasons to hire capable hands to trade their accounts while they do other things.</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-anna-nekrashevich-6801681.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Analysis</h4>
+							<p class="card-text">Our analysis on each pair of either currency, stocks or indices are available in a paid platform for professional traders to use.</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-alesia-kozik-6771607.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Signals </h4>
+							<p class="card-text">We offer signals for traders to copy and paste in their accounts and make money. This is also provided in a paid platform with risk management involved.</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+						</div>
+					</div>
+			   </div>
+			  
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-alphatradezone-5833784.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Training </h4>
+							<p class="card-text">We train prospective traders and give them a holistic approach to the market. Find more about training in premium Pips Academy.</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+						</div>						
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-kindel-media-8566472.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Bots </h4>
+							<p class="card-text">Our bots are programmed with our strategies. You can buy them and use for trading.</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+						</div>
+					</div>
+		       </div>
+			   <div class="col-lg-4 mb-4">
+				<div class="card h-100">
+					<div class="card-img">
+						<img class="img-fluid" src="{% static 'images/pexels-artem-podrez-5716025.jpg' %}" alt="" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-header"> Prop firm </h4>
+						<p class="card-text">We offer account management for prop firm accounts beginning from $20000 and above.
+							Terms and conditions are negotiable.
+							</p>
+							<a href="https://wa.link/c4m5tz" ><p> Get in touch with us on whatsapp</p></a>
+					</div>
+				</div>
+		   </div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+	
+	
+	
+</div>
+{% endblock content %}

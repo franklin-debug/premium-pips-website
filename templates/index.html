@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper-main">
+	
+   
+	
+    <header class="slider-main">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <!-- Slide One - Set the background image for this slide in the line below -->
+               <div class="carousel-item active" style="background-image: url('/static/images/pexels-energepiccom-159888.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Welcome to Premium Pips</h3>
+                     <p>A Great Place For Finance Analysis Consulting</p>
+                  </div>
+               </div>
+               <!-- Slide Two - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('/static/images/pexels-fauxels-3184292.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>Best Trading Company.</h3>
+                     <p>We Provide Excelent Trading Solutions</p>
+                  </div>
+               </div>
+               <!-- Slide Three - Set the background image for this slide in the line below -->
+               <div class="carousel-item" style="background-image: url('/static/images/pexels-nataliya-vaitkevich-7173047.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                     <h3>The Next Level of Trading</h3>
+                     <p>We Provide New Trading Conventions</p>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+	
+    <!-- Page Content -->
+    <div class="container">        
+        <!-- About Section -->
+        <div class="about-main">
+            <div class="row">
+               <div class="col-lg-6">
+                  <h2>Welcome to Premium Pips</h2>
+                  <p>PREMIUM PIPS is a wealth management company established for the purpose of maximizing the opportunities in the financial market to grow wealth for investors and provide employment opportunities for trainees.</p>
+                  <p>Our investment portfolio cuts across the key sectors of the financial market; Forex and stocks . Everyday we take advantage of the opportunities in these markets to grow funds for investors. Our return on investment makes us every investor's toast.</p>
+				  <p>We spread our tentacles to analysis and signals for professional traders. With long years of experience in the financial market, traders can place confidence in our strategy and make money using our analysis and signals</p>
+				  <!--<h5>Our smart approach</h5>
+                  <ul>
+                     <li>Sed at tellus eu quam posuere mattis.</li>
+                     <li>Phasellus quis erat et enim laoreet posuere ac porttitor ipsum.</li>
+                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>                     
+                  </ul>-->
+               </div>
+               <div class="col-lg-6" >
+                  <img class="img-fluid rounded" src="{% static 'images/IMG-20230609-WA0018.jpg' %}"width="400px" height="300px"  alt="" />
+               </div>
+            </div>
+            <!-- /.row -->
+        </div>
+	</div>	
+	
+	<div class="services-bar">
+		<div class="container">
+			<h1 class="py-4">Our Investment Portfolio </h1>
+			<!-- Services Section -->
+			<div class="row">
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img  src="{% static 'images/pexels-antoni-shkraba-5583964.jpg' %}" width="100px" height="220px"  alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Forex </h4>
+							<p class="card-text">According to a recent statistics, the forex market has a daily trading volume of over $5 trillion, making it the most actively traded market globally. With our team of expert traders who take part in this market, enormous profit is being realized, consistent capital growth achieved and Investors given sufficient return on investment.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-pixabay-210607 (1).jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Stocks </h4>
+							<p class="card-text">We also seek opportunity in the different stocks market particularly the US stock exchange with trades volumes in Billions of US dollars.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-michael-steinberg-342945.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Metals </h4>
+							<p class="card-text">We analyse and bet on the prices of both gold and silver usually paired against the US dollars. The volatility of these pairs makes them a honeycomb of Capital growth.</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4" >
+					<div class="card h-100">
+						<div class="card-img">
+							<img class="" src="{% static 'images/pexels-karolina-grabowska-7876507.jpg' %}" width="100px" height="220px" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Indices </h4>
+							<p class="card-text">The performance of a basket of stocks is traded as indices. We have traders specialized in indices. This is important to our long term goal of Capital growth</p>
+						</div>						
+					</div>
+			   </div>
+			
+			   <div class="col-lg-4 mb-4">
+				<div class="card h-100">
+					<div class="card-img">
+						<img class="img-fluid" src="{% static 'images/pexels-karolina-grabowska-5980886.jpg' %}" alt="" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-header"> Commodities </h4>
+						<p class="card-text">The most important commodities are soya bean, crude and precious metals. Enormous opportunities abound in the price fluctuations of these commodities.</p>
+					</div>
+				</div>
+		       </div>
+			   <div class="col-lg-4 mb-4">
+				<div class="card h-100">
+					<div class="card-img">
+						<img class="img-fluid" src="{% static 'images/pexels-pixabay-236089.jpg' %}" alt="" />
+					</div>
+					<div class="card-body">
+						<h4 class="card-header"> Energy </h4>
+						<p class="card-text">We bet on energies like natural gas and gasoline. Swift change in prices is effective in Capital growth.</p>
+					</div>
+				</div>
+		   </div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+   <div class="services-bar">
+		<div class="container">
+			<h1 class="py-4"> Premium Pips Academy </h1>
+			<!-- Services Section -->
+			<div class="row">
+			   <div class="col-lg-4 mb-4">
+					<div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/pexels-burak-the-weekender-187041.jpg' %} " alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Beginner Class</h5>
+                    <p class="card-text">Duration: 1 Month</p>
+                    <p class="card-text">Cost: Free</p>
+                    <a href="{% url 'register' %}" class="btn btn-primary">Rgister and Get Contacted</a>
+                    <p class="card-text">Learn How To Trade Forex From US!</p>
+                  </div>
+                </div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="{% static 'images/pexels-anna-nekrashevich-6801874.jpg' %} " alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Master Class</h5>
+                    <p class="card-text">Duration: 3 Months</p>
+                    <p class="card-text">Cost: $200</p>
+                    <a href="{% url 'register' %}" class="btn btn-primary">Rgister and Get Contacted</a>
+                    <p class="card-text">Learn How To Trade Forex From US!</p>
+                  </div>
+                </div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+				<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="{% static 'images/pexels-alphatradezone-5833305.jpg' %} " alt="Card image cap">
+			  <div class="card-body">
+				<h5 class="card-title">Mentorship</h5>
+				<p class="card-text">Duration: Life time</p>
+				<p class="card-text">Cost: $300</p>
+				<a href="{% url 'register' %}" class="btn btn-primary">Rgister and Get Contacted</a>
+				<p class="card-text">Learn How To Trade Forex From US!</p>
+			  </div>
+			</div>
+		   </div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+   <div class="services-bar">
+		<div class="container">
+			<h1 class="py-4"> Investment Plan </h1>
+			<!-- Services Section -->
+			<div class="row">
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100" style="width: 18rem;">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-anna-nekrashevich-6801681.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Stellar</h4>
+							<p class="card-text">Minimum of $10,000</p>
+                     <p class="card-text">25% ROI</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100" style="width: 18rem;">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-alphatradezone-5834240.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Stellar Plus </h4>
+							<p class="card-text">Minimum of $100,000</p>
+                     <p class="card-text">30% ROI</p>
+						</div>
+					</div>
+			   </div>
+			   <div class="col-lg-4 mb-4">
+					<div class="card h-100" style="width: 18rem;">
+						<div class="card-img">
+							<img class="img-fluid" src="{% static 'images/pexels-david-mcbee-730547.jpg' %}" alt="" />
+						</div>
+						<div class="card-body">
+							<h4 class="card-header"> Premium PLans </h4>
+							<p class="card-text">Minimum of $200,000</p>
+                     <p class="card-text">35% ROI</p>
+						</div>
+					</div>
+			   </div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+	<div class="container">
+        <!-- Portfolio Section -->
+        <div class="portfolio-main">
+            <h2>Our Media</h2>
+
+            <div id="projects" class="projects-main row">
+               {% for item in portfolio %}
+               <div class="col-lg-4 col-sm-6 pro-item portfolio-item financial">
+                  <div class="card h-100">
+                     <div class="card-img">
+                        <a href="{% static 'images/portfolio-img-01.jpg' %}" data-fancybox="images">
+                           <img class="card-img-top" src={{item.image.url}} height="300" width="150" alt="" />
+                           <div class="overlay"><i class="fas fa-arrows-alt"></i></div>
+                        </a>
+                     </div>
+                     <div class="card-body">
+                        <h4 class="card-title">
+                           <a href="#">{{ item.title }}</a>
+                        </h4>
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+               
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+	
+    <!-- /.container -->
+    
+</div>
+	  
+{% endblock content %}

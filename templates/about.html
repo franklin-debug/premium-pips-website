@@ -1,0 +1,154 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper-main">
+	
+	
+	
+	<!-- full Title -->
+	<div class="full-title">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3"> About Us</h1>
+			<div class="breadcrumb-main">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{% url 'index' %}">Home</a>
+					</li>
+					<li class="breadcrumb-item active"> About Us </li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+    <div class="container">
+		<!-- About Content -->
+		<div class="about-main">
+			<div class="row">
+				<div class="col-lg-6">
+					<img class="img-fluid rounded mb-4" src="{% static 'images/pexels-alesia-kozik-6771740.jpg' %}" alt="" />
+				</div>
+				<div class="col-lg-6">
+					<h2>About Premium Pips</h2>
+					<p>PREMIUM PIPS is a wealth management company established for the purpose of maximizing the opportunities in the financial market to grow wealth for investors and provide employment opportunities for trainees.</p>
+					<p>Our investment portfolio cuts across the key sectors of the financial market; Forex and stocks . Everyday we take advantage of the opportunities in these markets to grow funds for investors. Our return on investment makes us every investor's toast.</p>
+					<p>Our goal in  long term is  to create wealth and employment for our clients and through this means make lasting impacts in their lives. Everyone is welcome to Premium Pips</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+	<div class="about-inner">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-lg-6">
+					<div class="left-ab">
+						<h3>Our Mission</h3>
+						<p>To help investors in exploring the enormous opportunities in the financial market through our sophisticated first hand knowledge and experience in trading.</p>
+						<p>To raise professional traders by training and exposure to actual trading.</p>
+						<p>To support the economy by legitimate capital growth for investors and employment opportunities for the upcoming traders.</p>
+						<h4>Our Core Values</h4>
+						<ul>
+							<li>Trust: Our word is our bond in both internal and external affairs. </li>
+							<li>Expertise: We ensure every employee is well trained and capable of quality delivery.</li>
+							<li>Loyalty: Loyalty to our clients  in serving their needs and loyalty of the employees to the company leadership is one of our core values.</li>      
+														
+					  </ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="right-ab">
+						<img class="img-fluid rounded mb-4" src="{% static 'images/mission-img.jpg' %}" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="right-ab">
+						<img class="img-fluid rounded mb-4" src="{% static 'images/vision-img.jpg' %}" alt="" />
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="left-ab">
+						<h3>Our Vision</h3>
+						<p>To champion a leading financial institution well vested in Investment and capital growth which shall become the toast of investors.</p>
+						<ul>
+							<li>To become a leading training institution for traders..</li>
+														
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- Team Members -->
+		<div class="team-members-box">  
+			<h2>Our Team</h2>
+			<div class="row">
+				<div class="col-lg-4 mb-4">
+					<div class="card h-100 text-center">
+						<div class="our-team">
+							<img class="img-fluid" src="{% static 'images/IMG-20230617-WA0001.jpg' %}" alt="" />
+							<div class="team-content">
+								<h3 class="title">Kenwth G</h3>
+								<span class="post">Cofounder and CEO</span>
+								<ul class="social">
+									<li><a ><i class="fab fa-facebook"></i></a></li>
+									<li><a ><i class="fab fa-google-plus"></i></a></li>
+									<li><a ><i class="fab fa-twitter"></i></a></li>
+									<li><a ><i class="fab fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4">
+					<div class="card h-100 text-center">
+						<div class="our-team">
+							<img class="img-fluid" src="{% static 'images/IMG-20230617-WA0002.jpg' %}" height="200" width="150" alt="" />
+							<div class="team-content">
+								<h3 class="title">Hillary U</h3>
+								<span class="post">Cofounder and Chief Investment Officer</span>
+								<ul class="social">
+									<li><a ><i class="fab fa-facebook"></i></a></li>
+									<li><a ><i class="fab fa-google-plus"></i></a></li>
+									<li><a ><i class="fab fa-twitter"></i></a></li>
+									<li><a ><i class="fab fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mb-4" height="300"  width="100">
+					<div class="card h-100 text-center">
+						<div class="our-team">
+							<img class="" src="{% static 'images/IMG-20230611-WA0017.jpg' %}" height="300"  width="100" alt="" />
+							<br><br><br><br><br><br>
+							<div class="team-content">
+								<h3 class="title">Charity C</h3>
+								<span class="post">Head of Marketing Team</span>
+								<ul class="social">
+									<li><a ><i class="fab fa-facebook"></i></a></li>
+									<li><a ><i class="fab fa-google-plus"></i></a></li>
+									<li><a ><i class="fab fa-twitter"></i></a></li>
+									<li><a ><i class="fab fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+	</div>
+	
+	
+	
+
+    
+</div>
+
+{% endblock content %}

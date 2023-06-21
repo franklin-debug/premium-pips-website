@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper-main">
+	
+    
+	
+	<!-- full Title -->
+	<div class="full-title">
+		<div class="container">
+			<!-- Page Heading/Breadcrumbs -->
+			<h1 class="mt-4 mb-3"> Contact </h1>
+			<div class="breadcrumb-main">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{% url 'index' %}">Home</a>
+					</li>
+					<li class="breadcrumb-item active">Contact</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+    <div class="contact-main">
+		<div class="container">
+			<!-- Content Row -->
+		  <div class="row">
+			<!-- Map Column -->
+				<div class="col-lg-8 mb-4 contact-left">
+					<h3>Send us a Message</h3>
+					<form method="POST" action={% url 'addmessage' %} >
+						{% csrf_token %}
+						<div class="control-group form-group">
+							<div class="controls">
+								<input name="Name" type="text" placeholder="Full Name" class="form-control" id="" required data-validation-required-message="Please enter your name.">
+								<p class="help-block"></p>
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<input name="Mobile_no" type="tel" placeholder="Phone Number" class="form-control" id="" required data-validation-required-message="Please enter your phone number.">
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<input name="Email" type="email" placeholder="Email Address" class="form-control" id="" required data-validation-required-message="Please enter your email address.">
+							</div>
+						</div>
+						<div class="control-group form-group">
+							<div class="controls">
+								<textarea name="Message" rows="5" cols="100" placeholder="Message" class="form-control" id="" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+							</div>
+						</div>
+						<div id="success"></div>
+						<!-- For success/fail messages -->
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
+				</div>
+				<!-- Contact Details Column -->
+				<div class="col-lg-4 mb-4 contact-right">
+					<h3>Contact Details</h3>
+					<p>
+						10, Ezeokan Crescent
+						<br>Enugu
+						<br>Nigeria
+					</p>
+					<p>
+						<abbr title="Phone">P</abbr>: +2348158006059
+					</p>
+					<p>
+						<abbr title="Email">E</abbr>:
+						<a href="+primefx003@gmail.com"> +primefx003@gmail.com </a>
+					</p>
+					<p>
+						<abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+					</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</div>
+	
+	<div class="map-main">
+		<!-- Embedded Google Map -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31718.093746620234!2d7.493104603906242!3d6.4246534347516535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s10%20ezeokana%20street%20ogui%20enugu!5e0!3m2!1sen!2sus!4v1687046652988!5m2!1sen!2sus" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+
+</div>
+{% endblock content %}
